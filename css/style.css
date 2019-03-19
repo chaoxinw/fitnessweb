@@ -1,0 +1,484 @@
+
+
+  .info-bar{
+    height: 350px;
+    width: 100%;
+    background: #FFF;
+    padding-bottom: 50px;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .short-info{
+    width: 60%;
+    box-sizing: border-box;
+  }
+  .info-img{
+    width: 40%;
+    box-sizing: border-box;
+    background: #000;
+    /*
+    border-left: 100px solid #FFF;
+    */
+    border-bottom: 300px solid transparent;
+    background: url("../assets/fitness1.jpg");
+    background-position: -100px -50px;
+    background-size: 800px auto;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    z-index: 10;
+  }
+  .mask-black{
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    border-left: 100px solid #FFF;
+    border-bottom: 300px solid transparent;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 11;
+  }
+  .info-content-wrapper{
+    margin-top: 50px;
+  }
+  .info-content-wrapper-left{
+    margin-left: 100px;
+    margin-right: 200px;
+  }
+  .info-content-wrapper-right{
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  .text-orange{
+    color: #db6327!important;
+  }
+  .info-img-2{
+    width: 40%;
+    box-sizing: border-box;
+    background: #000;
+    border-right: 100px solid #FFF;
+    border-bottom: 300px solid transparent;
+    background: url("../assets/fitness2.jpeg");
+    background-size: 800px auto;
+    background-position: -150px -10px;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+  }
+  .mask-black-2{
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    border-right: 100px solid #FFF;
+    border-bottom: 300px solid transparent;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .info-block{
+    width: 80%;
+    height: 320px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-block-inner{
+    height: 80%;
+    text-align: center;
+    margin: 30px 30px 0px 30px;
+  }
+  .text-align-right{
+    text-align: right;
+  }
+
+  .js-moving-bar{
+  	width: 50px;
+  	height: 300px;
+  	-webkit-transform: skew(161.5deg);
+  	   -moz-transform: skew(161.5deg);
+  	     -o-transform: skew(161.5deg);
+  	background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* right: 490px; */
+    right: 36%;
+    z-index: 20;
+    flex: 0;
+  }
+
+  .js-moving-bar-2{
+  	width: 50px;
+  	height: 300px;
+  	-webkit-transform: skew(161.5deg);
+  	   -moz-transform: skew(161.5deg);
+  	     -o-transform: skew(161.5deg);
+  	background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* right: 490px; */
+    right: 36%;
+    z-index: 20;
+    flex: 0;
+  }
+
+  /* @media screen and (max-width: 64em) {
+    .info-block{
+      flex-direction: column;
+    }
+  }
+  */
+  .js-moving-bar-left{
+    width: 50px;
+    height: 300px;
+    -webkit-transform: skew(18.5deg);
+       -moz-transform: skew(18.5deg);
+         -o-transform: skew(18.5deg);
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* left: 490px; */
+    left: 36%;
+    z-index: 20;
+    flex: 0;
+  }
+
+  .js-moving-bar-left-2{
+    width: 50px;
+    height: 300px;
+    -webkit-transform: skew(18.5deg);
+       -moz-transform: skew(18.5deg);
+         -o-transform: skew(18.5deg);
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    /* left: 490px; */
+    left: 36%;
+    z-index: 20;
+    flex: 0;
+  }
+  .parallax {
+  	background-image: url("../assets/fitness1.jpg");
+  	height: 800px;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+    /* margin-top: 100px; */
+    text-align: center;
+    padding-top: 50px;
+  }
+  .kickstarttitle{
+    color:#FFF!important;
+    font-style:italic;
+    font-size: 50px;
+    /* margin-top: 50px; */
+  }
+  .kickstartbtn{
+    margin-left:auto;
+    margin-right:auto;
+    color:#FFF;
+    font-size:20px;
+    background-color:transparent;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+
+  }
+  .kickstartbtn:hover{
+    cursor: pointer;
+    color: #E5E8E8;
+    border: 2px solid #E5E8E8;
+  }
+  .neo-front-page-video{
+    /* height: 500px; */
+    width: 100%;
+    margin-top: 50px;
+  }
+  .neo-front-page-video-wrapper{
+    width: 60%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+
+  @media screen and (max-width: 920px) {
+    .info-block{
+      grid-template-columns: auto;
+      grid-template-rows: 200px 200px 200px;
+      height: 600px;
+    }
+    .info-block-inner{
+      margin: 0;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1120px) {
+    .js-moving-bar,
+    .js-moving-bar-2,
+    .js-moving-bar-left,
+    .js-moving-bar-left-2{
+      display: none;
+    }
+
+    .info-img,
+    .info-img-2,
+    .mask-black,
+    .mask-black-2{
+      width: 0;
+      display: none;
+    }
+    .short-info{
+      width: 100%;
+    }
+    .info-content-wrapper{
+      margin: 50px 50px 0 50px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .info-bar{
+      height: 400px;
+    }
+  }
+
+  .neo-comming-soon-bar{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+    background-color: #FFF;
+    padding-top: 20px;
+  }
+  .neo-comming-soon-bar div{
+    display: block;
+    font-size: 25px;
+  }
+  .neo-comming-soon-bar div span{
+    font-size: 27px;
+    color: #db6327;
+    font-weight: bold;
+  }
+  p{
+    line-height: 1.6;
+  }
+
+
+
+
+    .carousel-item{
+			/* background-color: red; */
+			width: 100px;
+			height: 300px;
+			text-align: center;
+		}
+		.slick-slide {
+		    margin: 0 20px;
+		}
+		/* the parent */
+		.slick-list {
+		    /*margin: 0 -10px;*/
+		    overflow: hidden;
+
+		}
+		.slick-center {
+		    -webkit-transform: scale(1.05);
+		    -moz-transform: scale(1.05);
+		    transform: scale(1.05);
+		}
+		.slick-carousel-wrapper{
+			vertical-align: middle;
+			/*margin-top: 20px;*/
+		}
+		.bottom-carousel-content-wrapper{
+			width: 60%;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+      margin-top: 50px;
+			background-color: transparent;
+		}
+    .bottom-carousel-img-content-wrapper{
+      width: 500px;
+      max-height: 300px;
+      margin-left: auto;
+      background-color: transparent;
+      margin-right: 50px;
+    }
+    .slick-prev:before {
+      color: white!important;
+    }
+    .slick-next:before {
+      color: white!important;
+    }
+		.video-wrapper{
+			height: 100%;
+		}
+		.video-wrapper div, .video-wrapper div img{
+			height: 100%;
+		}
+    .carousel-img1{
+      width: 100%;
+      height: 100%;
+      background: url('../assets/fitness1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-img2{
+      width: 100%;
+      height: 100%;
+      background: url('../assets/fitness2.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-img3{
+      width: 100%;
+      height: 100%;
+      background: url('../assets/test1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .carousel-img4{
+      width: 100%;
+      height: 100%;
+      background: url('../assets/test1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+  .slider-layer1 {
+     position: absolute;
+     z-index: 90;
+     background: rgba(0, 0, 0, 0.6);
+     width: 100%;
+     height: 100%;
+   }
+   .slider-img-test1{
+     background-image: url('../assets/fitness1.jpg');
+     /* filter: grayscale(80%) brightness(50%); */
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   .slider-img-test2{
+     background-image: url('../assets/fitness2.jpeg');
+     /* filter: grayscale(80%) brightness(50%); */
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+   .slText{
+     top: 54%!important;
+     z-index:99;
+     font-size:40px!important;
+   }
+
+   @media screen and (max-width: 1000px) {
+     .slText{
+       font-size: 23px!important;
+     }
+   }
+   @media screen and (max-width: 600px) {
+     .neo-front-page-slider{
+       height: 400px!important;
+       /* font-size: 20px!important; */
+     }
+     .slText{
+       font-size: 18px!important;
+       padding:0 100px!important;
+     }
+     .slider-img-test1,
+     .slider-img-test2{
+       width: 100%;
+
+       /* background-position: -90px; */
+     }
+   }
+   @media screen and (max-width: 800px){
+     .bottom-carousel-content-wrapper{
+       height: 300px;
+       width: 90%;
+     }
+     .carousel-item{
+       height: 300px;
+     }
+   }
+   .site-content{
+     overflow: hidden;
+   }
+
+   .info-block-inner-header-margin{
+     margin-bottom: 40px;
+   }
+
+   .free-trial-container{
+     width: 100%;
+     height: 120px;
+     background: #db6327;
+     text-align: center;
+     position: relative;
+     transition: all 0.4s;
+   }
+   .free-trial-content{
+     color: white;
+     /* margin-top: 30px; */
+     /* padding-top: 60px; */
+     font-size: 20px;
+     position: absolute;
+     margin-left: auto;
+     margin-right: auto;
+     right: 0;
+     left: 0;
+     width: 350px;
+     top: 10px;
+     /* transition: all 0.1s; */
+   }
+   .trial-button{
+     background: transparent;
+     color: white;
+     border: 2px solid white;
+     border-radius: 8px;
+     width: 100px;
+     margin-top: 5px;
+   }
+   .trial-button:hover{
+     cursor: pointer;
+     color: #E5E8E8;
+     border: 2px solid #E5E8E8;
+   }
+
+   @media screen and (max-width: 350px) {
+     .free-trial-content{
+       width: 300px;
+     }
+   }
+
+
+  .midnightHeader.default {
+    background: rgba(248, 249, 250, 1);
+    color: black;
+  }
+
+  .midnightHeader.lightblack {
+    background: transparent;
+    background-color: rgba(0,0,0, 0.3);
+    color: white!important;
+  }
+
+
+
+  .footer-wrap {
+    background: #333;
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 130px; 
+  }
+  .footer-info-wrap {
+    width: 500px;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+
